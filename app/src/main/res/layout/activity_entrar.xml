@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#200749"
+    tools:context="Entrar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="#200749"
+                android:onClick="atras"
+                app:srcCompat="@drawable/flecha" />
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/app"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:digits="0123456789"
+                android:fontFamily="@font/aleo"
+                android:hint="Celular"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textColorHint="#959194" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/boton"
+                android:fontFamily="@font/aleo"
+                android:onClick="ingresar"
+                android:text="Entrar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imagen3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/nequiii"
+                android:visibility="visible"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

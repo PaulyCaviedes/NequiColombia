@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abel</item>
+        <item>@font/aleo</item>
+        <item>@font/aleo_light</item>
+        <item>@font/chonburi</item>
+        <item>@font/doppio_one</item>
+        <item>@font/krona_one</item>
+        <item>@font/volkhov</item>
+    </array>
+</resources>

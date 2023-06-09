@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#200749"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="361dp"
+                android:layout_height="385dp"
+                android:src="@drawable/app"
+                android:visibility="visible"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/boton"
+                android:fontFamily="@font/aleo"
+                android:onClick="crear"
+                android:text="Crea tu Nequi"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buton"
+                android:fontFamily="@font/aleo"
+                android:onClick="entrar"
+                android:text="Entra"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ayuda"
+                    android:fontFamily="@font/aleo"
+                    android:onClick="ayuda"
+                    android:text="Ayuda"
+                    android:textAllCaps="false"
+                    android:textColor="#959194"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"/>
+
+                <ImageView
+                    android:id="@+id/imagen2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/nequiii"
+                    android:visibility="visible"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="200dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
